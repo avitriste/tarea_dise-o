@@ -17,7 +17,7 @@ function Usuarios() {
       <div className="usuarios-grid">
         {usuarios.map((usuario, index) => (
           <div key={index} className="usuario-card">
-            <img src={usuario.picture.large} alt="foto de perfil" />
+            <img src={usuario.picture} alt="foto de perfil" />
             <h3>{`${usuario.name.first} ${usuario.name.last}`}</h3>
             <p>{usuario.email}</p>
             <p>{usuario.location.country}</p>
